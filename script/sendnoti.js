@@ -21,9 +21,9 @@ module.exports.run = async function ({ api, event, args, admin }) {
 	async function sendMessage(thread) {
 		try {
 			await api.sendMessage(
-`\n ━━━━━━━━━━━━━━━━━━━━━━━\n『 𝐍𝐎𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 』\n\n ━━━━━━━━━━━━━━━━━━━━━━━\n𝗠𝗲𝘀𝘀𝗮𝗴𝗲:「${custom}」\n ━━━━━━━━━━━━━━━━━━━━━━━`,
+`『 𝐍𝐎𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 』\n━━━━━━━━━━━━━━━━\n𝗠𝗲𝘀𝘀𝗮𝗴𝗲:「${custom}」\n━━━━━━━━━━━━━━━━`,
 				thread.threadID
-			);
+			;
 			sentCount++;
 
 			const content = `${custom}`;
