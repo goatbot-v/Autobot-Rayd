@@ -196,3 +196,18 @@ h1{
 .btn btn-primary{
 	text-align: center;
 }
+button{
+    font-size: 30px;
+    padding: 5px;
+   	background-color: #075813;
+   	color: white;
+   	border: double;
+   	border-radius: 15px;
+	  cursor: pointer;
+	   text-align: center;
+    display: block;
+    margin-bottom: 0px;
+    width: 100%;
+    border-color: white;
+    border-width: 5px;
+}
