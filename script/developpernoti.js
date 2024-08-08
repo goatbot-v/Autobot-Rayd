@@ -3,12 +3,12 @@ const fs = require("fs-extra");
 const path = require("path");
 
 module.exports.config = {
-	name: "sendnoti",
+	name: "developpernoti",
 	version: "1.1.0",
 	role: 2,
 	description: "Sends a message to all groups and can only be done by the admin.",
 	hasPrefix: false,
-	aliases: ["noti"],
+	aliases: ["notification"],
 	usages: "[Text]",
 	cooldown: 0,
 };
@@ -21,9 +21,9 @@ module.exports.run = async function ({ api, event, args, admin }) {
 	async function sendMessage(thread) {
 		try {
 			await api.sendMessage(
-`『 𝐍𝐎𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 』\n━━━━━━━━━━━━━━━━\n𝗠𝗲𝘀𝘀𝗮𝗴𝗲:「${custom}」\n━━━━━━━━━━━━━━━━`,
+`\n ━━━━━━━━━━━━━━━━━━━━━━━\n『 𝐍𝐎𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 』\n\n ━━━━━━━━━━━━━━━━━━━━━━━\n𝗠𝗲𝘀𝘀𝗮𝗴𝗲:「${custom}」\n ━━━━━━━━━━━━━━━━━━━━━━━`,
 				thread.threadID
-			;
+			);
 			sentCount++;
 
 			const content = `${custom}`;
