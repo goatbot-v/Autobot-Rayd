@@ -50,6 +50,7 @@ body {
 		 background-color: #0056b3;
 		 border: 1px solid #0056b3;
 	   outline: 2px solid #FFFFFF;
+	 text-align: center;
 }
  .success-message {
 		 color: green;
@@ -76,9 +77,11 @@ body {
  .container-buttons {
 		 margin-top: 20px;
 		 text-align: center;
+	         text-align: center;
 }
  .container-buttons .btn {
 		 margin: 5px;
+	        text-align: center;
 }
 
  #result {
